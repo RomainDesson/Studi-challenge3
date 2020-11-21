@@ -39,51 +39,60 @@ p, button {
     box-shadow: 1px 1px 8px black;
     margin-top: 8px;
 }
+footer {
+    position: absolute;
+    top: 88%;
+    left: 83%;
+}
+footer i{
+    color: #ffff;
+    transform: scale(200%);
+    margin: 20px
+}
 
 @media screen and (max-width: 375px) {
 
-    body {
-        background-color: hsl(257, 40%, 49%);
-        background-image: url(./images/bg-desktop.svg);
-        background-repeat: no-repeat;
-    }
     header {
-        margin-top: 5%;
+        margin-top: 10%;
         margin-left: 20px;
+        margin-bottom: 20%;
     }
     header img {
         height: 50%;
         width: 50%;
     }
     main {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 20px 0 20px;
     }
     main img {
         height: 100%;
         width: 90%;
     }
-    h1, p {
-        color: #ffff;
-    }
     h1 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
-    p, button {
-        font-family: 'Open Sans', sans-serif;
+    .left-content {
+        margin-bottom: 50px;
     }
     .right-content {
         margin-left: 0;
     }
     .right-content > button {
-        border: none;
-        padding: 1em 4em 1em 4em;
-        color: hsl(257, 40%, 49%);
-        border-radius: 25px;
-        box-shadow: 1px 1px 8px black;
-        margin-top: 8px;
+        padding: 1em 6em 1em 6em;
+        margin-top: 20px;
+    }
+    footer {
+        position: absolute;
+        top: 110%;
+        left: 28%;
+    }
+    footer i{
+        color: #ffff;
+        transform: scale(150%);
+        margin: 20px
     }
 
 }
